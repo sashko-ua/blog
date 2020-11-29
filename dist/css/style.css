@@ -135,24 +135,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: rgba(255, 255, 255, 0.38);
   text-transform: uppercase;
-  opacity: 0.5;
-  color: #ffffff;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: 27px;
-  text-align: left;
+  color: rgba(255, 255, 255, 0.5);
   font-variant: small-caps;
-  font-style: normal;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 27px;
   letter-spacing: 0.8px;
-  line-height: normal;
 }
 
 .header__right i {
+  font-size: 16px;
   margin: 0 7px 0 0;
 }
 
@@ -172,19 +165,20 @@
   height: 20px;
   width: 1px;
   background-color: rgba(255, 255, 255, 0.38);
-  margin: 0 15px;
+  margin: 0 8px;
 }
 
-.header__right select {
+.language {
   background-color: unset;
   border: none;
   color: rgba(255, 255, 255, 0.38);
   text-transform: uppercase;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
 }
 
-.header__right select option {
+.language option {
   color: rgba(255, 255, 255, 0.38);
   background-color: #191919;
 }
@@ -226,6 +220,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -233,6 +230,12 @@
   font-weight: 700;
   font-style: normal;
   padding: 16px 0 0;
+}
+
+.intro__menu .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .intro__menu-logo {
@@ -265,8 +268,20 @@
 }
 
 .intro__menu-nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
   cursor: pointer;
+}
+
+.intro__menu-nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: -.2px;
 }
 
 .intro__menu-nav ul i {
@@ -281,6 +296,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 3px 20px 0 0;
 }
 
 .intro__menu-icons .icons-divider {
@@ -398,6 +414,10 @@
   border-radius: 15px;
   border: 1px solid #3f51b5;
   color: #3f51b5;
+}
+
+.main {
+  position: relative;
 }
 
 .main .article {
@@ -791,7 +811,7 @@
 }
 
 .footer {
-  height: 540px;
+  min-height: 540px;
   background-color: #212121;
 }
 
@@ -799,7 +819,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 45px 0 0;
+  padding: 45px 0 70px;
   gap: 30px;
 }
 
@@ -1042,4 +1062,89 @@
 
 .footer__grid .social .dr {
   background-color: #ea4c89;
+}
+
+.footer__nav {
+  height: 80px;
+  background-color: #303030;
+}
+
+.footer__nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.footer__nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.footer__nav-menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0px 38px 0 0;
+  letter-spacing: 0.6px;
+}
+
+.footer__nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__nav-right .search {
+  position: relative;
+  margin: 0 69px 0 0;
+}
+
+.footer__nav-right .search input {
+  width: 220px;
+  height: 35px;
+  border-radius: 17px;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  background-color: transparent;
+  padding: 0 0 0 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 27px;
+  letter-spacing: 0.7px;
+}
+
+.footer__nav-right .search button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.footer__nav-right .search button:focus {
+  outline: none;
+}
+
+.footer__nav-right i {
+  color: rgba(255, 255, 255, 0.5);
 }

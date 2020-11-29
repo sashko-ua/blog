@@ -24,43 +24,38 @@
     &__right
         display: flex
         align-items: center
-        color: $header-icons
         text-transform: uppercase
-        opacity: 0.5
-        color: #ffffff
-        font-family: Montserrat
-        font-size: 16px
-        font-weight: 400
-        font-style: normal
-        letter-spacing: normal
-        line-height: 27px
-        text-align: left
+        color: rgba(255, 255, 255, .5)
         font-variant: small-caps
-        font-style: normal
+        font-size: 12px
+        font-weight: 400
+        line-height: 27px
         letter-spacing: 0.8px
-        line-height: normal
         i
-
+            font-size: 16px
             margin: 0 7px 0 0
         .sing-in
             display: flex
             align-items: center
             cursor: pointer
+
             &::after
                 content: ''
                 display: inline-block
                 height: 20px
                 width: 1px
                 background-color: $header-icons
-                margin: 0 15px
+                margin: 0 8px
 
-        select
-            background-color: unset
-            border: none
-            color: $header-icons
-            text-transform: uppercase
-            cursor: pointer
-            color: rgba(255, 255, 255, .5)
-            option
-                color: $header-icons
-                background-color: #191919
+.language
+    background-color: unset
+    border: none
+    color: $header-icons
+    text-transform: uppercase
+    cursor: pointer
+    color: rgba(255, 255, 255, .5)
+    font-size: 12px
+
+    option
+        color: $header-icons
+        background-color: #191919

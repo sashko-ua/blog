@@ -52,7 +52,7 @@
                 <div class="sing-in">sign in</div>
 
                 <i class="fas fa-globe"></i>
-                <select name="language" id="">
+                <select class="language" name="language" id="">
                     <option selected value="eng">eng</option>
                     <option value="ru">ru</option>
                     <option value="ua">ua</option>
@@ -63,7 +63,6 @@
     </header>
 
     <section class="intro">
-
         <div class="intro__slider">
             <div class="slider__arrow-right">
                 <i class="fas fa-chevron-right"></i>
@@ -74,26 +73,43 @@
         </div>
         <div class="container">
             <div class="intro__menu">
-                <span class="intro__menu-logo">LOGO</span>
+                <div class="left">
+                    <span class="intro__menu-logo">LOGO</span>
 
-                <nav class="intro__menu-nav">
-                    <ul>
-                        <li>Home</li>
-                        <i class="fas fa-chevron-down"></i>
-                        <li>Portfolio</li>
-                        <i class="fas fa-chevron-down"></i>
-                        <li>Blog</li>
-                        <i class="fas fa-chevron-down"></i>
-                        <li> Pages</li>
-                        <i class="fas fa-chevron-down"></i>
-                        <li>Shop</li>
-                        <i class="fas fa-chevron-down"></i>
-                        <li>components</li>
-                        <i class="fas fa-chevron-down"></i>
-                        <li>Features</li>
-                        <i class="fas fa-chevron-down"></i>
-                    </ul>
-                </nav>
+                    <nav class="intro__menu-nav">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                                <i class="fas fa-chevron-down"></i>
+                            </li>
+
+                            <li>
+                                <a href="#">Portfolio</a>
+                                <i class="fas fa-chevron-down"></i>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                                <i class="fas fa-chevron-down"></i>
+                            </li>
+                            <li>
+                                <a href="#">Pages</a>
+                                <i class="fas fa-chevron-down"></i>
+                            </li>
+                            <li>
+                                <a href="#">Shop</a>
+                                <i class="fas fa-chevron-down"></i>
+                            </li>
+                            <li>
+                                <a href="#">components</a>
+                                <i class="fas fa-chevron-down"></i>
+                            </li>
+                            <li>
+                                <a href="#">Features</a>
+                                <i class="fas fa-chevron-down"></i>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
 
                 <div class="intro__menu-icons">
                     <i class="fas fa-search"></i>
@@ -957,6 +973,50 @@
                 </form>
             </div>
         </div>
+
+        <div class="footer__nav">
+            <div class="container">
+                <ul class="footer__nav-menu">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Pages</a>
+                    </li>
+                    <li>
+                        <a href="#">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#">components</a>
+                    </li>
+                    <li>
+                        <a href="#">Features</a>
+                    </li>
+                </ul>
+
+                <div class="footer__nav-right">
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+
+                    <i class="fas fa-globe"></i>
+
+                    <select class="language" name="language" id="">
+                        <option selected value="eng">eng</option>
+                        <option value="ru">ru</option>
+                        <option value="ua">ua</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
     </footer>
 
 </body>
