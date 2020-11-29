@@ -34,6 +34,8 @@
                 letter-spacing: 0.6px
                 &_small
                     bottom: 10px
+                &_middle
+                    bottom: 23px
             &_right
                 position: absolute
                 right: 19px
@@ -45,6 +47,10 @@
                 &_small
                     bottom: 8px
 
+                &_middle
+                    right: 21px
+                    bottom: 21px
+
         &__descr
             padding: 15px 0 14px 20px
             font-style: normal
@@ -53,7 +59,9 @@
             &_long
                 padding: 9px 0 11px 17px
             &_small
-                padding: 14px 0 25px 20px
+                padding: 11px 0 25px 20px
+            &_middle
+                padding: 7px 0 17px 22px
             &-title
                 opacity: 0.87
                 color: #000
@@ -65,8 +73,11 @@
                     letter-spacing: 0.5px
                 &_small
                     font-size: 14px
-                    letter-spacing: 0.4px
+                    letter-spacing: -0.3px
                     line-height: 24px
+                &_middle
+                    font-weight: 800
+                    letter-spacing: -0.08px
             &-text
                 margin: 7px 10px 0 0
                 opacity: 0.87
@@ -84,7 +95,10 @@
                 &_small
                     font-size: 14px
                     line-height: 21px
-                    letter-spacing: 0.53px
+                    letter-spacing: -0.2px
+                &_middle
+                    margin: 5px 10px 0 -3px
+                    letter-spacing: -0.1px
         &__author
             display: flex
             align-items: center
@@ -99,6 +113,9 @@
                 align-items: center
                 justify-content: space-between
                 padding: 16px 21px 17px 20px
+            &_middle
+                padding: 18px 20px 11px 20px
+
             &-left
                 display: flex
                 .info
@@ -112,6 +129,9 @@
                 &_long
                     margin: 6px 10px
                     letter-spacing: .6px
+                &_middle
+                    margin: 7px 0 0 10px
+                    letter-spacing: 0.7px
             &-date
                 margin: 8px 0 0 8px
                 opacity: 0.54
@@ -129,3 +149,34 @@
                     height: 4px
                     background-color: #000000
                     border-radius: 100%
+
+    .more
+        &__box
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            margin: 22px -1px 0px
+            span
+                color: #303f9f
+                font-size: 16px
+                font-weight: 600
+                line-height: 36px
+                text-align: left
+                font-style: normal
+                letter-spacing: 0.2px
+                line-height: normal
+                margin: 0 9px 0 0
+        &__btn
+            width: 42px
+            height: 42px
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12)
+            background-color: #ffffff
+            border-radius: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            cursor: pointer
+            i
+                color: #3f51b5
+                font-size: 16px

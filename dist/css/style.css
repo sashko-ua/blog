@@ -17,9 +17,9 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: .7fr;
+  grid-template-columns: minmax(500px, 820px);
   grid-template-rows: auto;
-  padding: 31px 0;
+  padding: 33px 0 43px;
 }
 
 .grid-boxes {
@@ -453,6 +453,10 @@
   bottom: 10px;
 }
 
+.main .article__poster_left_middle {
+  bottom: 23px;
+}
+
 .main .article__poster_right {
   position: absolute;
   right: 19px;
@@ -469,6 +473,11 @@
   bottom: 8px;
 }
 
+.main .article__poster_right_middle {
+  right: 21px;
+  bottom: 21px;
+}
+
 .main .article__descr {
   padding: 15px 0 14px 20px;
   font-style: normal;
@@ -482,7 +491,11 @@
 }
 
 .main .article__descr_small {
-  padding: 14px 0 25px 20px;
+  padding: 11px 0 25px 20px;
+}
+
+.main .article__descr_middle {
+  padding: 7px 0 17px 22px;
 }
 
 .main .article__descr-title {
@@ -500,8 +513,13 @@
 
 .main .article__descr-title_small {
   font-size: 14px;
-  letter-spacing: 0.4px;
+  letter-spacing: -0.3px;
   line-height: 24px;
+}
+
+.main .article__descr-title_middle {
+  font-weight: 800;
+  letter-spacing: -0.08px;
 }
 
 .main .article__descr-text {
@@ -525,7 +543,12 @@
 .main .article__descr-text_small {
   font-size: 14px;
   line-height: 21px;
-  letter-spacing: 0.53px;
+  letter-spacing: -0.2px;
+}
+
+.main .article__descr-text_middle {
+  margin: 5px 10px 0 -3px;
+  letter-spacing: -0.1px;
 }
 
 .main .article__author {
@@ -560,6 +583,10 @@
   padding: 16px 21px 17px 20px;
 }
 
+.main .article__author_middle {
+  padding: 18px 20px 11px 20px;
+}
+
 .main .article__author-left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -578,6 +605,11 @@
 .main .article__author-name_long {
   margin: 6px 10px;
   letter-spacing: .6px;
+}
+
+.main .article__author-name_middle {
+  margin: 7px 0 0 10px;
+  letter-spacing: 0.7px;
 }
 
 .main .article__author-date {
@@ -608,4 +640,148 @@
   height: 4px;
   background-color: #000000;
   border-radius: 100%;
+}
+
+.main .more__box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 22px -1px 0px;
+}
+
+.main .more__box span {
+  color: #303f9f;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: 0.2px;
+  line-height: normal;
+  margin: 0 9px 0 0;
+}
+
+.main .more__btn {
+  width: 42px;
+  height: 42px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+  background-color: #ffffff;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.main .more__btn i {
+  color: #3f51b5;
+  font-size: 16px;
+}
+
+.instagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.instagram img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+}
+
+.subscribe {
+  background: url(../img/subscribe.png) top left no-repeat;
+  height: 200px;
+  margin: -4px 0 0;
+}
+
+.subscribe .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.subscribe h2 {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 36px;
+  text-align: left;
+  font-style: normal;
+  letter-spacing: 1px;
+  line-height: normal;
+}
+
+.subscribe form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe input {
+  width: 270px;
+  height: 45px;
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  background-color: rgba(48, 48, 48, 0.38);
+  padding: 0 0 0 20px;
+  color: rgba(255, 255, 255, 0.54);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  font-style: normal;
+  letter-spacing: 0.8px;
+  margin: 0 30px 0 0;
+}
+
+.subscribe input[type=button] {
+  width: 170px;
+  height: 45px;
+  -webkit-box-shadow: 0 17px 24px rgba(48, 63, 159, 0.2);
+          box-shadow: 0 17px 24px rgba(48, 63, 159, 0.2);
+  border-radius: 22px;
+  background-color: #303f9f;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 36px;
+  text-align: left;
+  font-variant: small-caps;
+  font-style: normal;
+  letter-spacing: 1.2px;
+  line-height: normal;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
