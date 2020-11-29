@@ -1,0 +1,42 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'Montserrat', sans-serif
+
+.container
+    margin: 0 auto
+    max-width: 60.938%
+
+.wrapper
+    background-color: #f5f5f5
+
+.grid-container
+    display: grid
+    grid-template-columns: .7fr
+    grid-template-rows: auto
+    padding: 31px 0
+
+.grid-boxes
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: auto
+    gap: 20px
+
+.grid-big-boxes
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: auto
+    gap: 20px
+
+// font-family: 'Montserrat', sans-serif
+// font-family: 'Open Sans', sans-serif
+
+@import base/variables
+
+@import blocks/author
+
+@import blocks/header
+@import blocks/intro
+@import blocks/filter
+@import blocks/main

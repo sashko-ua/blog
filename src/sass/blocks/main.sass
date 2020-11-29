@@ -1,0 +1,131 @@
+.main
+    .article
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12)
+        border-radius: 4px
+        background-color: #ffffff
+        margin: 0 0 21px
+        &_long
+            display: flex
+            height: 165px
+        &__poster
+            position: relative
+            cursor: pointer
+            color: #ffffff
+            font-size: 16px
+            font-weight: 400
+            text-align: left
+            font-variant: small-caps
+            font-style: normal
+            letter-spacing: 0.8px
+            line-height: normal
+            height: auto
+            &_big
+                position: relative
+                height: 420px
+
+            &_small
+                height: 160px
+                video
+                    height: 160px
+            &_left
+                position: absolute
+                bottom: 15px
+                left: 18px
+                letter-spacing: 0.6px
+                &_small
+                    bottom: 10px
+            &_right
+                position: absolute
+                right: 19px
+                bottom: 15px
+                letter-spacing: -.1px
+                font-size: 15px
+                i
+                    margin: 0 0 0 18px
+                &_small
+                    bottom: 8px
+
+        &__descr
+            padding: 15px 0 14px 20px
+            font-style: normal
+            line-height: normal
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12)
+            &_long
+                padding: 9px 0 11px 17px
+            &_small
+                padding: 14px 0 25px 20px
+            &-title
+                opacity: 0.87
+                color: #000
+                font-size: 18px
+                font-weight: 700
+                letter-spacing: 0.42px
+                &_long
+                    font-size: 16px
+                    letter-spacing: 0.5px
+                &_small
+                    font-size: 14px
+                    letter-spacing: 0.4px
+                    line-height: 24px
+            &-text
+                margin: 7px 10px 0 0
+                opacity: 0.87
+                color: #000000
+                font-family: "Open Sans"
+                font-size: 16px
+                font-weight: 400
+                letter-spacing: 0.64px
+                line-height: 25px
+                font-style: normal
+                &_long
+                    font-size: 14px
+                    letter-spacing: 0.66px
+                    line-height: 24px
+                &_small
+                    font-size: 14px
+                    line-height: 21px
+                    letter-spacing: 0.53px
+        &__author
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 21px 21px 18px 20px
+            font-style: normal
+            line-height: normal
+            &_long
+                padding: 11px 20px 0 20px
+            &_small
+                display: flex
+                align-items: center
+                justify-content: space-between
+                padding: 16px 21px 17px 20px
+            &-left
+                display: flex
+                .info
+            &-name
+                margin: 5px 0 0 8px
+                opacity: 0.87
+                color: #000000
+                font-size: 14px
+                font-weight: 400
+                letter-spacing: 0.8px
+                &_long
+                    margin: 6px 10px
+                    letter-spacing: .6px
+            &-date
+                margin: 8px 0 0 8px
+                opacity: 0.54
+                color: #212121
+                font-size: 12px
+                font-weight: 400
+                letter-spacing: 1.2px
+            &-dots
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                height: 16px
+                .circle
+                    width: 4px
+                    height: 4px
+                    background-color: #000000
+                    border-radius: 100%

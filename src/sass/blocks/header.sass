@@ -1,0 +1,66 @@
+.header
+    height: 40px
+    width: 100%
+    background-color: #191919
+    z-index: 1
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 100%
+    &__left
+        a
+            text-decoration: none
+            i
+                font-size: 15px
+                color: $header-icons
+                font-weight: 400
+                font-style: normal
+                letter-spacing: normal
+                line-height: 19px
+                text-align: right
+                margin: 0 11px 0 0
+
+    &__right
+        display: flex
+        align-items: center
+        color: $header-icons
+        text-transform: uppercase
+        opacity: 0.5
+        color: #ffffff
+        font-family: Montserrat
+        font-size: 16px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        line-height: 27px
+        text-align: left
+        font-variant: small-caps
+        font-style: normal
+        letter-spacing: 0.8px
+        line-height: normal
+        i
+
+            margin: 0 7px 0 0
+        .sing-in
+            display: flex
+            align-items: center
+            cursor: pointer
+            &::after
+                content: ''
+                display: inline-block
+                height: 20px
+                width: 1px
+                background-color: $header-icons
+                margin: 0 15px
+
+        select
+            background-color: unset
+            border: none
+            color: $header-icons
+            text-transform: uppercase
+            cursor: pointer
+            color: rgba(255, 255, 255, .5)
+            option
+                color: $header-icons
+                background-color: #191919
