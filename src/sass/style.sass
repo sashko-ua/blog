@@ -6,16 +6,20 @@
 
 .container
     margin: 0 auto
-    max-width: 60.938%
+    max-width: 1170px
 
 .wrapper
+    position: relative
     background-color: #f5f5f5
 
 .grid-container
+    position: relative
+    z-index: 1
     display: grid
-    grid-template-columns: minmax(500px, 820px)
+    grid-template-columns: 820px 1fr
     grid-template-rows: auto
-    padding: 33px 0 43px
+    padding: 33px 0 0
+    gap: 40px
 
 .grid-boxes
     display: grid
@@ -29,6 +33,15 @@
     grid-template-rows: auto
     gap: 20px
 
+.whiteBG
+    position: absolute
+    top: 33px
+    right: 0
+    height: calc( 100% - 33px )
+    width: 32%
+    background-color: #fff
+    z-index: 0
+
 // font-family: 'Montserrat', sans-serif
 // font-family: 'Open Sans', sans-serif
 
@@ -40,6 +53,7 @@
 @import blocks/intro
 @import blocks/filter
 @import blocks/main
+@import blocks/aside
 @import blocks/instagram
 @import blocks/subscribe
 @import blocks/footer
