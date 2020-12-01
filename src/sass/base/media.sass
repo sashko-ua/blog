@@ -159,28 +159,193 @@
         grid-template-columns: 1fr
 
     .intro
+        height: calc( 100vh - 40px )
         &__menu
+            .left
+                display: flex
+                align-items: center
+                justify-content: space-between
+                width: 100%
+            &-icons
+                display: none
             &-nav
+                display: none
                 position: fixed
                 top: 0
                 z-index: 5
                 ul
-                    display: none
+                    display: flex
+                    justify-content: center
+                    align-items: center
                     flex-direction: column
                     width: 100vw
                     height: 100vh
                     background-color: rgba(0, 0, 0, .9)
+                    li
+                        width: 100%
+                        display: flex
+                        justify-content: center
+                        margin: 0 0 25px
+                        padding: 5px 25px
+                        font-size: 20px
+
+                .close
+                    position: absolute
+                    top: 25px
+                    right: 25px
+                    font-size: 25px
+                    z-index: 100
+                    color: #fff
+
+        &__descr
+            position: absolute
+            top: 20%
+            left: 50%
+            transform: translate(-50%)
+            width: 80%
+            margin: 0
+            &-title
+                font-size: 24px
+
+        &__btn
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translateX(-50%)
+
+        .author
+            position: absolute
+            bottom: 10px
+            left: 50%
+            transform: translate(-50%)
 
     .filter
+        &__btns
+            span
+                margin: 0 10px 0 0
         &__btn
             padding: 0 10px
             font-size: 15px
 
+    .instagram
+        grid-template-columns: repeat(4, 1fr)
+
+@media ( max-width: 575px )
+    .container
+        width: 100%
+        padding: 0 15px
+
+    .grid-container
+        grid-template-columns: 100%
+
+    .header
+        height: 40px
+        background-color: #303f9f
+        &__left
+            display: none
+        &__right
+            flex-direction: row-reverse
+            justify-content: space-between
+            width: 100%
+            .sing-in
+                &::after
+                    display: none
+
     .intro
-        height: calc( 100vh - 40px )
+        height: 70px
+        background: #3f51b5
         &__descr
-            margin: 75px 0 0
-            &-title
-                font-size: 24px
+            display: none
+        &__slider
+            display: none
+        &__btn
+            display: none
         .author
-            margin: 120px auto 0
+            display: none
+
+    .filter
+        &__btns
+            display: none
+
+    .main
+        padding: 0
+        .more__box
+            display: none
+
+        .article
+            &__poster
+                .video
+                    &_long
+                        width: unset
+                &_small
+                    .slider
+                        &__right, &__left
+                            display: none
+
+                &_left
+                    bottom: 25px
+                &_right
+                    bottom: 5px
+                    right: unset
+                    left: 12px
+                    i
+                        margin: 0 0 0 6px
+
+            &__descr
+                &_middle, &_small
+                    padding: 0
+                &-text
+                    &_small, &_middle
+                        display: none
+                &-title
+                    &_middle, &_small
+                        display: none
+
+    .wrapper
+        .container
+            padding: 20px
+
+        .article
+            &__descr
+                &_long
+                    padding: 10px
+                &-text
+                    &_long
+                        display: none
+                &-title
+                    font-size: 16px
+                    font-weight: 500
+
+            &__author
+                &_long
+                    display: none
+                &-left
+                    img
+                        display: none
+                &_small, &_middle
+                    padding: 16px 10px 17px 5px
+
+            &__poster
+                &_long
+                    width: 355px
+                    .article
+                        &__poster
+                            &_left, &_right
+                                display: none
+
+        .grid-boxes
+            display: flex
+            flex-wrap: wrap
+            .article
+                width: 100%
+
+    .instagram
+        display: none
+
+    .subscribe
+        display: none
+
+    .footer
+        display: none
+    .footer-mobile
+        display: block

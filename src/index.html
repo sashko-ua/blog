@@ -48,15 +48,19 @@
             </div>
 
             <div class="header__right">
-                <i class="fas fa-user-circle"></i>
-                <div class="sing-in">sign in</div>
+                <div class="in">
+                    <i class="fas fa-user-circle"></i>
+                    <div class="sing-in">sign in</div>
+                </div>
 
-                <i class="fas fa-globe"></i>
-                <select class="language" name="language" id="">
-                    <option selected value="eng">eng</option>
-                    <option value="ru">ru</option>
-                    <option value="ua">ua</option>
-                </select>
+                <div class="">
+                    <i class="fas fa-globe"></i>
+                    <select class="language" name="language" id="">
+                        <option selected value="eng">eng</option>
+                        <option value="ru">ru</option>
+                        <option value="ua">ua</option>
+                    </select>
+                </div>
 
             </div>
         </div>
@@ -74,9 +78,16 @@
         <div class="container">
             <div class="intro__menu">
                 <div class="left">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
                     <span class="intro__menu-logo">LOGO</span>
 
                     <nav class="intro__menu-nav">
+                        <i class="close far fa-times-circle"></i>
                         <ul>
                             <li>
                                 <a href="#">Home</a>
@@ -109,6 +120,8 @@
                             </li>
                         </ul>
                     </nav>
+
+                    <i class="mobile fas fa-shopping-cart"></i>
                 </div>
 
                 <div class="intro__menu-icons">
@@ -159,6 +172,30 @@
                 <div class="filter__btn">trip</div>
                 <div class="filter__btn">inspiration</div>
             </div>
+
+            <div class="filter__mobile">
+                <div class="filter__mobile-btn">
+                    <span>Sort blog</span>
+    
+                    <div class="filter__mobile-sort">
+                        <i class="fas fa-sort-up"></i>
+                        <i class="fas fa-sort-down"></i>
+                    </div>
+                </div>
+
+                <div class="filter__mobile-list">
+                    <ul>
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">Lorem</a></li>
+                        <li><a href="#">Lorem</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            
         </div>
     </div>
 
@@ -395,8 +432,8 @@
                 </article>
 
                 <div class="grid-boxes">
-                    <article class="article">
-                        <div class="article__poster article__poster_small">
+                    <article class="article mobile-article">
+                        <div class="article__poster article__poster_small ">
                             <div class="video">
                                 <video poster="">
                                     <source src="#">
@@ -459,8 +496,7 @@
 
                     <article class="article">
                         <div class="article__poster article__poster_small">
-
-                            <div class="video ">
+                            <div class="video">
                                 <img src="img/aticles/Amazing.png" alt="Amazing">
                             </div>
 
@@ -1228,6 +1264,104 @@
 
     </footer>
 
+    <footer class="footer-mobile">
+        <div class="container">
+            <h2>LOGO</h2>
+            <span>
+                LOGO sit amet varius orci. Duis upse commodo elit sedamocid nisimole up stie, vitae fringilla justo fringilla. Lori Vestibulum libr portaman neque enia gravida elementum facilisis ipsum leonardo. Vestibulum loeuenim and libero, lobortis eu tortor ut, hendrerit  maxi tellus. Vivamus egestas massa leo, sit amet facilisis commodo. 
+            </span>
+
+            <div class="footer-mobile__btn">
+                read more
+            </div>
+
+            <div class="footer-mobile__categories">
+                <h3>categories</h3>
+
+                <ul>
+                    <li>
+                        <div class="categorie">Photography</div>
+
+                        <div class="value">195</div>
+                    </li>
+
+                    <li>
+                        <div class="categorie">Illustration</div>
+
+                        <div class="value">15</div>
+                    </li>
+
+                    <li>
+                        <div class="categorie">Graphic Design</div>
+
+                        <div class="value">36</div>
+                    </li>
+
+                    <li>
+                        <div class="categorie">Web design</div>
+
+                        <div class="value">220</div>
+                    </li>
+
+                    <li>
+                        <div class="categorie">Videography</div>
+
+                        <div class="value">17</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-mobile__tags">
+                <h3>tags </h3>
+
+                <div class="wrapper">
+                    <span>Photography</span>
+                    <span>Webdesign</span>
+                    <span>Youtube</span>
+                    <span>Envato</span>
+                    <span>Art</span>
+                    <span>Themefotest</span>
+                    <span>Illustration</span>
+                </div>
+            </div>
+
+            <div class="footer-mobile__flickr">
+                <h3>flickr</h3>
+
+                <div class="flickr-wrapper">
+                    <img src="img/flickr/mobile/1.png" alt="1">
+                    <img src="img/flickr/mobile/2.png" alt="2">
+                    <img src="img/flickr/mobile/3.png" alt="3">
+                    <img src="img/flickr/mobile/4.png" alt="4">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-mobile__social">
+            <a href="#">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-vk"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-pinterest-p"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-tumblr"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-dribbble"></i>
+            </a>
+        </div>
+
+        <div class="footer-mobile__co">
+            © 2016 LOGO | All Rights Reserved  
+        </div>
+    </footer>
 </body>
 
 </html>
