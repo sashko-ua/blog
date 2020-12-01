@@ -16,7 +16,7 @@
     position: relative
     z-index: 1
     display: grid
-    grid-template-columns: 820px 1fr
+    grid-template-columns: minmax(auto, 820px) 1fr
     grid-template-rows: auto
     padding: 33px 0 0
     gap: 40px
@@ -26,6 +26,9 @@
     grid-template-columns: repeat(3, 1fr)
     grid-template-rows: auto
     gap: 20px
+    .video
+        img
+            border-radius: 0 0 0 0
 
 .grid-big-boxes
     display: grid
@@ -38,12 +41,9 @@
     top: 33px
     right: 0
     height: calc( 100% - 33px )
-    width: 32%
+    width: 27%
     background-color: #fff
     z-index: 0
-
-// font-family: 'Montserrat', sans-serif
-// font-family: 'Open Sans', sans-serif
 
 @import base/variables
 
@@ -57,3 +57,7 @@
 @import blocks/instagram
 @import blocks/subscribe
 @import blocks/footer
+
+@import blocks/social
+
+@import base/media

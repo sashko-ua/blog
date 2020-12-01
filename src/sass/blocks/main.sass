@@ -21,14 +21,48 @@
             letter-spacing: 0.8px
             line-height: normal
             height: auto
+            &_long
+                width: 260px
+
             &_big
                 position: relative
                 height: 420px
 
             &_small
                 height: 160px
-                video
-                    height: 160px
+                .slider
+                    position: relative
+                    height: 100%
+                    img
+                        object-fit: cover
+                        height: 100%
+                    .arrow
+                        width: 10px
+                        height: 10px
+                        border-width: 0 3px 3px 0
+                        border-style: solid
+                        border-color: #3f51b5
+                        transform: rotate(-45deg)
+                    &__left, &__right
+                        position: absolute
+                        top: 50%
+                        transform: translateY(-50%)
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        width: 36px
+                        height: 36px
+                        background-color: #fff
+                        cursor: pointer
+                    &__right
+                        right: 10px
+                        .arrow
+                            transform: rotate(-45deg)
+                    &__left
+                        left: 10px
+                        .arrow
+                            transform: rotate(135deg)
+
             &_left
                 position: absolute
                 bottom: 15px
@@ -52,6 +86,32 @@
                 &_middle
                     right: 21px
                     bottom: 21px
+
+            .video
+                position: relative
+                height: 100%
+                img
+                    position: absolute
+                    top: 0
+                    left: 0
+                    object-fit: cover
+                    width: 100%
+                    height: 100%
+                    border-radius: 4px 0 0 4px
+                    z-index: 0
+                video
+                    height: 100%
+                    width: 100%
+
+                i
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    font-size: 40px
+
+                &_long
+                    width: 260px
 
         &__descr
             padding: 15px 0 14px 20px
