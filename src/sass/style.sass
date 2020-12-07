@@ -1,63 +1,21 @@
+@import base/variables
+
 *
     padding: 0
     margin: 0
     box-sizing: border-box
-    font-family: 'Montserrat', sans-serif
+    &:focus
+        outline: none
+
+a
+    text-decoration: none
+
+li
+    list-style: none
 
 .container
-    margin: 0 auto
     max-width: 1170px
-
-.wrapper
-    position: relative
-    background-color: #f5f5f5
-
-.grid-container
-    position: relative
-    z-index: 1
-    display: grid
-    grid-template-columns: minmax(auto, 820px) 1fr
-    grid-template-rows: auto
-    padding: 33px 0 0
-    gap: 40px
-
-.grid-boxes
-    display: grid
-    grid-template-columns: repeat(3, 1fr)
-    grid-template-rows: auto
-    gap: 20px
-    .video
-        img
-            border-radius: 0 0 0 0
-
-.grid-big-boxes
-    display: grid
-    grid-template-columns: repeat(2, 1fr)
-    grid-template-rows: auto
-    gap: 20px
-
-.whiteBG
-    position: absolute
-    top: 33px
-    right: 0
-    height: calc( 100% - 33px )
-    width: 27%
-    background-color: #fff
-    z-index: 0
-
-@import base/variables
-
-@import blocks/author
+    margin: 0 auto
+    height: 100%
 
 @import blocks/header
-@import blocks/intro
-@import blocks/filter
-@import blocks/main
-@import blocks/aside
-@import blocks/instagram
-@import blocks/subscribe
-@import blocks/footer
-
-@import blocks/social
-
-@import base/media
