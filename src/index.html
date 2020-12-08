@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -66,65 +71,138 @@
         <div class="header__body">
             <div class="container">
                 <div class="header__body-inner">
-                    <nav class="header__nav">
+                    <nav class="header__menu">
                         <div class="logo">
                             <a href="#">LOGO</a>
                         </div>
 
-                        <ul class="header__menu-list">
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#">Home</a>
-                            <li>
-                                <a href="#">Home</a>
-                                <i class="fas fa-chevron-down"></i>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#">Portfolio</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#">Blog</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#">Pages</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#">Shop</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#">components</a>
-                            </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#">Features</a>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    <div class="header__slider">
-                        <div class="header__slider-item">
-                            <h2 class="suptitle">
-                                inspiration
-                            </h2>
-                            <h1 class="title">
-                                Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry
-                            </h1>
+                        <div class="header__menu-hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
 
-                        <button class="btn">read more</button>
+                        <div class="header__menu-wrapper">
+                            <div class="header__menu-close">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <ul class="header__menu-list">
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="#">Home</a>
+                                    <i class="fas fa-chevron-down"></i>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="#">Portfolio</a>
+                                    <i class="fas fa-chevron-down"></i>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="#">Blog</a>
+                                    <i class="fas fa-chevron-down"></i>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="#">Pages</a>
+                                    <i class="fas fa-chevron-down"></i>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="#">Shop</a>
+                                    <i class="fas fa-chevron-down"></i>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="#">components</a>
+                                    <i class="fas fa-chevron-down"></i>
+                                </li>
+                                <li class="header__menu-item">
+                                    <a class="header__menu-link" href="#">Features</a>
+                                    <i class="fas fa-chevron-down"></i>
+                                </li>
+                            </ul>
+                        </div>
 
+                        <div class="header__menu-triggers">
+                            <a href="#">
+                                <i class="fas fa-search"></i>
+                            </a>
+                            <a href="#">
+                                <i class="far fa-heart"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__slider">
+                <div class="header__slider-item">
+                    <div class="container">
+                        <h2 class="suptitle header__slider-suptitle">
+                            inspiration
+                        </h2>
 
-                        <div class="author">
+                        <h1 class="title header__slider-title">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry
+                        </h1>
+
+                        <button class="btn header__slider-btn">read more</button>
+
+                        <div class="author header__author">
                             <img class="author__img" src="img/authors/henry_little.png" alt="Lenry Little">
 
-                            <div class="author__mane">
-                                Henry Little
+                            <div class="author__wrapper">
+                                <div class="author__mane header__author-name">
+                                    Henry Little
+                                </div>
+
+                                <div class="author__date header__author-date">
+                                    <span class="author__date-month">Apri</span>
+                                    <span class="author__date-day">28,</span>
+                                    <span class="author__date-year">2016</span>
+                                    <span class="author__date-time">10:15</span>
+                                </div>
                             </div>
 
-                            <div class="author__date">
-                                <span class="author__date-month">Apri</span>
-                                <span class="author__date-day">28,</span>
-                                <span class="author__date-year">2016</span>
-                                <span class="author__date-time">10:15</span>
+                            <div class="author__activity">
+                                <div class="author__activity-comments">
+                                    <i class="fas fa-comments"></i>
+                                    <span>Comments (28)</span>
+                                </div>
+                                <div class="author__activity-likes">
+                                    <i class="far fa-heart"></i>
+                                    <span>Likes (07)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__slider-item">
+                    <div class="container">
+                        <h2 class="suptitle header__slider-suptitle">
+                            inspiration
+                        </h2>
+
+                        <h1 class="title header__slider-title">
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry
+                        </h1>
+
+                        <button class="btn header__slider-btn">read more</button>
+
+                        <div class="author header__author">
+                            <img class="author__img" src="img/authors/henry_little.png" alt="Lenry Little">
+
+                            <div class="author__wrapper">
+                                <div class="author__mane header__author-name">
+                                    Henry Little
+                                </div>
+
+                                <div class="author__date header__author-date">
+                                    <span class="author__date-month">Apri</span>
+                                    <span class="author__date-day">28,</span>
+                                    <span class="author__date-year">2016</span>
+                                    <span class="author__date-time">10:15</span>
+                                </div>
                             </div>
 
                             <div class="author__activity">
@@ -143,6 +221,13 @@
             </div>
         </div>
     </header>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
